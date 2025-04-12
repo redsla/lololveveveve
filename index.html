@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Emanuelle 💜</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #cba6f7, #a084dc);
+      color: #4a004e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+      background-image: url('https://i.imgur.com/E5nCSYj.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 24px;
+      padding: 40px;
+      max-width: 700px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(5px);
+      position: relative;
+      z-index: 2;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #6a0dad;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.8em;
+      text-align: justify;
+      margin-bottom: 1em;
+    }
+
+    .assinatura {
+      text-align: right;
+      font-weight: bold;
+      margin-top: 30px;
+    }
+
+    .data {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 1.1em;
+      font-style: italic;
+      color: #5c0d75;
+      animation: brilhar 2.5s ease-in-out infinite alternate;
+    }
+
+    .tulipas-animadas {
+      position: fixed;
+      bottom: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .tulipa {
+      width: 60px;
+      opacity: 1;
+      transform: scaleY(1);
+      animation: crescer 3s ease-out forwards, brilharTulipa 3s ease-in-out infinite alternate;
+    }
+
+    .tulipa:nth-child(2) {
+      animation-delay: 0.5s;
+    }
+
+    .tulipa:nth-child(3) {
+      animation-delay: 1s;
+    }
+
+    @keyframes crescer {
+      to {
+        opacity: 1;
+        transform: scaleY(1);
+      }
+    }
+
+    @keyframes brilhar {
+      0% { text-shadow: 0 0 5px #fff, 0 0 10px #c084fc; }
+      100% { text-shadow: 0 0 15px #fff, 0 0 25px #c084fc; }
+    }
+
+    @keyframes brilharTulipa {
+      0% { filter: brightness(1); }
+      100% { filter: brightness(1.4); }
+    }
+
+    .musica {
+      display: none;
+    }
+
+    .play-button {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #6a0dad;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 1.5em;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      z-index: 3;
+    }
+
+    .frase-final {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 1.4em;
+      color: #6a0dad;
+      font-weight: bold;
+      animation: brilhar 3s ease-in-out infinite alternate;
+    }
+  </style>
+</head>
+<body>
+  <button class="play-button" onclick="playMusic()">▶️</button>
+
+  <div class="musica" id="musica">
+    <iframe width="0" height="0" src="https://www.youtube.com/embed/5Tj8LSil3BY?autoplay=1&loop=1&playlist=5Tj8LSil3BY" 
+      title="Oriente - Vagabundo e a Dama (part. Mumu Nayah)" 
+      frameborder="0" 
+      allow="autoplay"
+      allowfullscreen></iframe>
+  </div>
+
+  <div class="card">
+    <h1>Para Emanuelle 💜</h1>
+    <p>Meu amor, Emanuelle,</p>
+    <p>Desde o primeiro momento em que nossas vidas se cruzaram, mesmo que através de uma tela, algo em mim mudou. Você trouxe cor aos meus dias, leveza às minhas noites e um brilho ao meu coração que eu nunca tinha sentido antes.</p>
+    <p>Com seu jeitinho doce, seu riso que ecoa na minha mente e essa conexão que a gente construiu, você se tornou uma parte essencial da minha vida.</p>
+    <p>Mas eu sei que, em algum ponto do caminho, eu errei. E talvez não tenha conseguido demonstrar o quanto você é importante pra mim. Se te magoei, se falhei em te cuidar como você merece… me desculpa, de todo o coração.</p>
+    <p>Essa carta é meu jeito de dizer que eu não desisti de nós. Que eu acredito no que temos, e que ainda sonho com os momentos que podemos viver juntos — mesmo que seja à distância por agora.</p>
+    <p>Quero poder te fazer sorrir de novo, quero ouvir você me chamando de bobo e ver seu nome brilhando no meu celular como a melhor parte do meu dia.</p>
+    <p>Emanuelle, se ainda existir em você um espacinho pra mim… me deixa reconquistar seu coração. Com flores, com palavras, com gestos — com tudo o que eu sou. Porque eu te amo. Simples assim. E isso não mudou.</p>
+    <p class="assinatura">Com carinho, esperança e todo o amor do mundo,<br>Daniel 💜</p>
+    <div class="data">🌙 Juntos desde 17 de dezembro de 2023 🌙</div>
+    <div class="frase-final">“Se meu coração pudesse falar, ele só diria teu nome. Emanuelle. Sempre você.” 💜</div>
+  </div>
+
+  <div class="tulipas-animadas">
+    <img class="tulipa" src="https://i.imgur.com/PR0LTNw.png" alt="Tulipa roxa animada">
+    <img class="tulipa" src="https://i.imgur.com/PR0LTNw.png" alt="Tulipa roxa animada">
+    <img class="tulipa" src="https://i.imgur.com/PR0LTNw.png" alt="Tulipa roxa animada">
+  </div>
+
+  <script>
+    function playMusic() {
+      document.getElementById('musica').style.display = 'block';
+      document.querySelector('.play-button').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
